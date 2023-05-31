@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #ffddd2;
+}
+
+header .header-container {
+}
+
+header .header-container .top-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 12vh;
+}
+
+header .header-container .top-header .search img {
+  height: 3vh;
+}
+
+header .header-container .top-header .logo img {
+  height: 10vh;
+}
+
+header .header-container .top-header .shop {
+  display: flex;
+  gap: 10px;
+}
+header .header-container .top-header .shop img {
+  height: 3vh;
+}
+
+header .header-container .nav-bar {
+}
+
+header .header-container .nav-bar .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  height: 8vh;
+
+  list-style: none;
+}
+
+main {
+  height: 78vh;
+}
+
+main .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-container figure {
+}
+
+main .main-container figure img {
+
+}
+
+main .main-container .content {
+
+}
+
+main .main-container .content section {
+
+}
+
+main .main-container .content section h1 {
+
+}
+
+main .main-container .content section p {
+
+}
