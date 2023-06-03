@@ -5,7 +5,6 @@
 }
 
 body {
-  font: 10px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -45,13 +44,21 @@ header .header-container .nav-bar {
 
 header .header-container .nav-bar .nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 50px;
 
   height: 8vh;
 
   list-style: none;
+}
+
+header .header-container .nav-bar .nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .header-container .nav-bar .nav li a:hover {
+  color: grey;
 }
 
 main {
@@ -68,21 +75,16 @@ main .main-container figure {
 }
 
 main .main-container figure img {
-
 }
 
 main .main-container .content {
-
 }
 
 main .main-container .content section {
-
 }
 
 main .main-container .content section h1 {
-
 }
 
 main .main-container .content section p {
-
 }
