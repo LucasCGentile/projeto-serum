@@ -9,6 +9,20 @@ body {
   background-color: #f7ede2;
 }
 
+main hr {
+  margin: 12px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+main .text h2 {
+  margin-top: 24px;
+  text-align: center;
+
+  color: #3c4c1e;
+}
+
 /* CSS HEADER */
 
 header {
@@ -71,14 +85,13 @@ header .header-container .nav-bar .nav li a:hover {
 /* CSS CONTEUDO PRINCIPAL */
 
 main {
-
 }
 
 main p {
   font-size: 1rem;
 }
 
-span{
+span {
   font-weight: bold;
 }
 
@@ -150,14 +163,12 @@ main .beneficios-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 main .beneficios-container h2 {
   color: #3c4c1e;
   margin-bottom: 1rem;
   margin-left: 20px;
-
 }
 
 main .beneficios-container ol li {
@@ -173,8 +184,7 @@ main .beneficios-container .beneficios-1 {
   display: flex;
   align-items: center;
   justify-content: start;
-  
-  margin-top: 24px;
+
   margin-bottom: 50px;
   border-radius: 27px;
 
@@ -194,7 +204,7 @@ main .beneficios-container .beneficios-2 {
   display: flex;
   justify-content: end;
   align-items: center;
-  
+
   margin-bottom: 50px;
   width: 80vw;
 
@@ -209,22 +219,20 @@ main .beneficios-container img {
   max-height: 60vh;
 }
 
-
-
 /* CSS SUSTENTABILIDADE */
 
 main .sustentabilidade {
-  display:flex ;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top:10px;
+  padding-top: 10px;
+
+  margin-bottom: 24px;
 }
 
-
 main .sustentabilidade img {
-  height: 200px;
-  width: 80vw;
-
+  height: 300px;
+  width: 700px;
 }
 
 main .sustentabilidade .text h3 {
@@ -243,11 +251,13 @@ main .sustentabilidade .text p {
   max-width: 1200px;
 }
 
-
-
 /* CSS CONTATOS */
 
-main .text-contato h2 {
+main .text {
+  margin-bottom: 62px;
+}
+
+main .text h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,14 +267,13 @@ main .text-contato h2 {
   padding-bottom: 12px;
 }
 
-main .text-contato p {
+main .text p {
   font-size: 16px;
   margin: auto;
   width: 80vw;
   text-align: center;
 
   margin-bottom: 24px;
-  
 }
 
 main .container-contato {
@@ -277,20 +286,19 @@ main .container-contato .form-name {
   margin-bottom: 24px;
 }
 
-main .container-contato  input {
-  border:none;
+main .container-contato input {
+  border: none;
   border-bottom: 1px solid black;
   background-color: transparent;
   outline: none;
 }
 
 main .container-contato textarea {
-  border:none;
+  border: none;
   border-bottom: 1px solid black;
   background-color: transparent;
   outline: none;
 }
-
 
 main .container-contato .form-assunto {
   display: flex;
@@ -308,6 +316,123 @@ main .container-contato .form-text {
   justify-content: center;
 }
 
+main .container-contato .button {
+  display: flex;
+  justify-content: center;
+}
+
+main .container-contato a {
+  text-decoration: none;
+  margin-top: 24px;
+  padding: 6px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+main .container-contato a:hover {
+  background-color: #c16448fd;
+  color: #edede9;
+}
+
+/* CSS QUEM SOMOS */
+
+main .about h2 {
+  margin-top: 24px;
+  text-align: center;
+}
+
+main .box-container .boxes {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+main .box-container .boxes .box {
+  display: flex;
+  justify-content: flex-start;
+
+  margin-top: 48px;
+
+  padding: 12px;
+
+  width: 500px;
+
+  box-shadow: 10px 5px 5px grey;
+}
+
+main .box-container .boxes .box:hover {
+  transform: translate(0, -2px);
+}
+
+main .box-container .boxes .box .info {
+}
+
+main .box-container .boxes .box .info img {
+  margin: 6px 8px 0 15px;
+  height: 30px;
+}
+
+main .box-container .boxes .box .info img:hover {
+content: url(images/linkedin-icon_colored.png);
+
+}
+
+main .box-top .box .info img {
+  margin: 10px 8px 0 15px;
+  height: 30px;
+}
+
+main .box-top .box .info img:hover {
+content: url(images/linkedin-icon_colored.png);
+
+}
 
 
 
+main .box-container .boxes .box .info h2 {
+  margin-left: 12px;
+}
+
+main .box-container .boxes .box .info p {
+  margin-left: 12px;
+}
+
+main .box-container .boxes .box img {
+  height: 120px;
+  border-radius: 40px;
+}
+
+main .box-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+main .box-top .box {
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 10px 5px 5px grey;
+  margin-top: 48px;
+  width: 500px;
+  padding: 12px;
+}
+
+main .box-top .box:hover {
+  transform: translate(0, -2px);
+}
+
+main .box-top .box h2 {
+  margin-left: 12px;
+}
+
+main .box-top .box p {
+  margin-left: 12px;
+}
+
+main  .box-top .box img {
+  height: 120px;
+  border-radius: 40px;
+}
