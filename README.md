@@ -1,7 +1,7 @@
 ## Projeto Serum - Prunus Soft Skin
 ![GitHub last commit](https://img.shields.io/github/last-commit/lucascgentile/projeto-serum?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/lucascgentile/projeto-serum?style=for-the-badge)
-![GitHub repo status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=for-the-badge)
+![GitHub repo status](https://img.shields.io/badge/status-concluido-green?style=for-the-badge)
 ![GitHub repo status](https://img.shields.io/badge/projeto-fatec-critical?style=for-the-badge)
 <a href="https://www.linkedin.com/in/lucascgentile/"><img src="https://img.shields.io/badge/%20linkedin-Lucas%20Gentile-blue?style=for-the-badge&logo=linkedin"></a>
 
