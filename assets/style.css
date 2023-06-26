@@ -13,7 +13,12 @@ main hr {
   margin: 12px;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 main .text-upper h2 {
@@ -45,6 +50,9 @@ header .header-container .top-header .search img {
   height: 3vh;
   cursor: pointer;
 }
+header .header-container .top-header .search img:hover {
+  content: url(images/search-icon-colored.png);
+}
 
 header .header-container .top-header .logo img {
   height: 10vh;
@@ -59,6 +67,13 @@ header .header-container .top-header .shop img {
   cursor: pointer;
 }
 
+header .header-container .top-header .shop .shop-icon:hover{
+  content: url(images/shop-icon-colored.png);
+}
+
+header .header-container .top-header .shop .account-icon:hover{
+  content: url(images/account-icon-colored.png);
+}
 header .header-container .nav-bar {
 }
 
@@ -128,7 +143,7 @@ main .main-container .content section h1 {
 }
 
 main .main-container .content section h2 {
-  font-size: 16px;
+  font-size: 38px;
 }
 
 main .main-container .content section h3 {
@@ -152,6 +167,7 @@ main .main-container .content section a {
 main .main-container .content section a:hover {
   background-color: #c16448fd;
   color: #edede9;
+  border: transparent;
 }
 
 /* CSS PAGINA BENEFICIOS */
@@ -171,12 +187,18 @@ main .beneficios-container h2 {
   margin-left: 20px;
 }
 
+main .beneficios-container ol {
+  margin-bottom: 28px;
+}
+
 main .beneficios-container ol li {
   list-style: circle;
   margin-left: 25px;
   margin-bottom: 8px;
 
   max-width: 95%;
+
+  font-size: 18px;
 }
 
 main .beneficios-container .beneficios-1 {
@@ -191,12 +213,43 @@ main .beneficios-container .beneficios-1 {
   width: 80vw;
 }
 
+main .beneficios-container .beneficios-1 .button a {
+  text-decoration: none;
+  margin-left: 18px;
+  padding: 6px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+main .beneficios-container .beneficios-1 .button a:hover {
+  background-color: #c16448fd;
+  color: #edede9;
+  border: transparent;
+}
+
+main .beneficios-container .beneficios-2 .button a {
+  text-decoration: none;
+  margin-left: 18px;
+  padding: 6px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+main .beneficios-container .beneficios-2 .button a:hover {
+  background-color: #c16448fd;
+  color: #edede9;
+  border: transparent;
+}
+
 main .beneficios-container .beneficios-1 .text {
   margin: auto;
 }
 main .beneficios-container .beneficios-1 .text p {
-  margin-bottom: 12px;
+  margin-bottom: 26px;
   margin-left: 12px;
+  font-size: 18px;
 }
 
 main .beneficios-container .beneficios-2 {
@@ -281,21 +334,24 @@ main .container-contato {
 
 main .container-contato .form-name {
   display: flex;
+  align-items: center;
   justify-content: center;
-
-  margin-bottom: 24px;
+  flex-direction: column;
 }
 
 main .container-contato input {
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   background-color: transparent;
   outline: none;
+  margin: 20px;
+  width: 500px;
+  font-family: "Poppins", Courier, monospace;
 }
 
 main .container-contato textarea {
   border: none;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
   background-color: transparent;
   outline: none;
 }
@@ -305,8 +361,6 @@ main .container-contato .form-assunto {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  margin-bottom: 24px;
 }
 
 main .container-contato .form-text {
@@ -316,12 +370,18 @@ main .container-contato .form-text {
   justify-content: center;
 }
 
+main .container-contato .form-text textarea {
+  border: none;
+  border-bottom: 1px solid grey;
+  font-family: "Poppins", Courier, monospace;
+}
+
 main .container-contato .button {
   display: flex;
   justify-content: center;
 }
 
-main .container-contato a {
+main .container-contato .button a {
   text-decoration: none;
   margin-top: 24px;
   padding: 6px;
@@ -330,9 +390,10 @@ main .container-contato a {
   border-radius: 12px;
 }
 
-main .container-contato a:hover {
+main .container-contato .button a:hover {
   background-color: #c16448fd;
   color: #edede9;
+  border: transparent;
 }
 
 /* CSS QUEM SOMOS */
@@ -374,8 +435,7 @@ main .box-container .boxes .box .info img {
 }
 
 main .box-container .boxes .box .info img:hover {
-content: url(images/linkedin-icon_colored.png);
-
+  content: url(images/linkedin-icon_colored.png);
 }
 
 main .box-top .box .info img {
@@ -384,11 +444,8 @@ main .box-top .box .info img {
 }
 
 main .box-top .box .info img:hover {
-content: url(images/linkedin-icon_colored.png);
-
+  content: url(images/linkedin-icon_colored.png);
 }
-
-
 
 main .box-container .boxes .box .info h2 {
   margin-left: 12px;
@@ -407,8 +464,6 @@ main .box-top {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
 }
 
 main .box-top .box {
@@ -432,7 +487,7 @@ main .box-top .box p {
   margin-left: 12px;
 }
 
-main  .box-top .box img {
+main .box-top .box img {
   height: 120px;
   border-radius: 40px;
 }
